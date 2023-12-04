@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ashion Template">
+    <meta name="keywords" content="Ashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aveile Hijab</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> <!-- Font Awesome CSS -->
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <span class="navbar-text">
+                AVAILE
+            </span>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="sidebar" id="mySidebar">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <div class="sidebar-logo">
+            <img src="../static/img/logo sidebar.png" alt="" class="img-fluid"> <!-- Make the image responsive -->
+        </div>
+        <div class="sidebar-slogan">
+            <h2>Hello Hijabers!</h2>
+        </div>
+        <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> HOME</a></li>
+            <li><a href="produk-utama.html"><i class="fa-solid fa-shirt"></i> PRODUCT</a></li>
+            <li><a href="transaction.html"><i class="fa-solid fa-bag-shopping"></i> TRANSACTION</a></li>
+            <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> CART</a></li>
+            <li><a href="contact.html"><i class="fas fa-address-book"></i> CONTACT</a></li>
+            <li><a href="main.html"><i class="fa-solid fa-right-from-bracket"></i> LOGOUT</a></li>
+        </ul>
+        <aside class="sidebar-copyright">
+            <!-- Konten sidebar -->
+            <p>&copy; AVEILE 
+                1.1.0 Version
+            </p>
+        </aside>        
+    </div>
+
+<!--EDIT DISINI-->
+<!-- Payment Section Begin -->
+    <section class="checkout spad">
+        <div class="container">
+            <div class="row">
+            <form action="#" class="checkout__form">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h4>RECEPIENT</h4>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="checkout__form__input">
+                                    <p>Full Name <span>*</span></p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="checkout__form__input">
+                                    <p>Email <span>*</span></p>
+                                    <input type="text">
+                                </div>
+                                <div class="checkout__form__input">
+                                    <p>Phone Number <span>*</span></p>
+                                    <input type="text">
+                                </div>
+                                <div class="checkout__form__input">
+                                    <p>Postal Code <span>*</span></p>
+                                    <input type="text">
+                                </div>
+                                <div class="checkout__form__input">
+                                    <p>Province <span>*</span></p>
+                                    <input type="text">
+                                </div>
+                                <div class="checkout__form__input">
+                                    <p>Country/Regency<span>*</span></p>
+                                    <input type="text">
+                                </div>
+                                <div class="checkout__form__input">
+                                    <p>District<span>*</span></p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="checkout__order">
+                            <h5>ORDER SUMMArY</h5> 
+                            <div class="row item">
+                                <div class="col-4 align-self-center">
+                                    <img class="img-fluid" src="../static/img/iklan-jilbab.jpg">
+                                </div>
+                                <div class="col-8">
+                                    <div class="row" style="margin-top: 12%;"><b>Pashmina Silk</b></div>
+                                    <div class="row text-transaction">75.000 IDR</div>
+                                    <div class="row text-transaction">Nude</div>
+                                    <div class="row text-transaction">Qty (2)</div>
+                                </div>
+                            </div>
+                            <div class="row item">
+                                <div class="col-4 align-self-center"><img class="img-fluid" src="../static/img/iklan-jilbab.jpg"></div>
+                                <div class="col-8">
+                                    <div class="row" style="margin-top: 12%;"><b>Pashmina Rayon</b></div>
+                                    <div class="row text-transaction">75.000 IDR</div>
+                                    <div class="row text-transaction">Nude</div>
+                                    <div class="row text-transaction">Qty (1)</div>
+                                </div>
+                            </div>
+                            <div class="checkout__order__total">
+                                <ul>
+                                    <li>Subtotal  Product<span>300.000 IDR</span></li>
+                                    <li>Shipping Cost <span>25.000</span></li>
+                                    <li>Total Payment<span>325.000 IDR</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="inputbox">
+                                <label for="pilih" class="form-label">CHOOSE PAYMENT MRTHODE</label>
+                                <select class="form-select" name="pilih" id="pilih" required>     
+                                    <option value="creditCard">BANK TRANSFER</option>
+                                    <option value="ewallet">GOPAY</option>
+                                    <option value="ewallet">SHOPEEPAY</option>
+                                    <option value="ewallet">COD</option>
+                                </select>
+                            </div> 
+                            <button class="site-btn"><a href="../templates/transaction.html" class="button-link">ORDER</a></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> 
+    </section>
+<!-- Payment Section End -->
+<!--END-->
+
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <a href="./home.html"><h2>AVEILE</h2></a>
+                    </div>
+                    <p>Perusahaan kami berdiri sejak 2019. Kami menjual berbagai macam hijab mulai dari pashmina, segiempat dan aksesoris hijab.</p>
+                    <div class="footer__payment">
+                        <a href="#"><img src="../static/img/payment/payment-1.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-2.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-3.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-4.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-5.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-5">
+                <div class="footer__widget">
+                    <h6>Quick links</h6>
+                    <ul>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./produk-utama.html">Product</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="footer__widget">
+                    <h6>Account</h6>
+                    <ul>
+                        <li><a href="./cart.html">Cart</a></li>
+                        <li><a href="./transaction.html">Transaction</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-8">
+                <div class="footer__newslatter">
+                    <h6>NEWSLETTER</h6>
+                    <form action="#">
+                        <input type="text" placeholder="Email">
+                        <button type="submit" class="site-btn">Subscribe</button>
+                    </form>
+                    <div class="footer__social">
+                        <a href="#"><i class="fa fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                        <a href="#"><i class="fa fa-shop"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <div class="footer_copyright_text">
+                    <p>&copy;  AVEILE 1.1.0 Version</p>
+                </div>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Search Begin -->
+<div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search End -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+    <!-- Js Plugins -->
+<script src="../static/js/jquery-3.3.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/jquery.magnific-popup.min.js"></script>
+<script src="../static/js/jquery-ui.min.js"></script>
+<script src="../static/js/mixitup.min.js"></script>
+<script src="../static/js/jquery.countdown.min.js"></script>
+<script src="../static/js/jquery.slicknav.js"></script>
+<script src="../static/js/owl.carousel.min.js"></script>
+<script src="../static/js/jquery.nicescroll.min.js"></script>
+<script src="../static/js/main.js"></script>
+</body>
+</html>

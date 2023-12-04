@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ashion Template">
+    <meta name="keywords" content="Ashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aveile Hijab</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> <!-- Font Awesome CSS -->
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <span class="navbar-text">
+                AVEILE
+            </span>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="sidebar" id="mySidebar">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <div class="sidebar-logo">
+            <img src="../static/img/logo sidebar.png" alt="" class="img-fluid"> <!-- Make the image responsive -->
+        </div>
+        <div class="sidebar-slogan">
+            <h2>Hello Hijabers!</h2>
+        </div>
+        <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> HOME</a></li>
+            <li><a href="produk-utama.html"><i class="fa-solid fa-shirt"></i> PRODUCT</a></li>
+            <li><a href="transaction.html"><i class="fa-solid fa-bag-shopping"></i> TRANSACTION</a></li>
+            <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> CART</a></li>
+            <li><a href="contact.html"><i class="fas fa-address-book"></i> CONTACT</a></li>
+            <li><a href="main.html"><i class="fa-solid fa-right-from-bracket"></i> LOGOUT</a></li>
+        </ul>
+        <aside class="sidebar-copyright">
+            <!-- Konten sidebar -->
+            <p>&copy; AVEILE 
+                1.1.0 Version
+            </p>
+        </aside>        
+    </div>
+
+<!--EDIT DISINI-->
+    <!-- Shop Cart Section Begin -->
+    <section class="shop-cart spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="shop__cart__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Gambar</th>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cart__product__item">
+                                        <img src="../static/img/iklan-jilbab.jpg" alt="Nama Produk 1" class="img-thumbnail" width="70px">
+                                    </td>
+                                    <td class="cart__product__item">
+                                        <div class="cart__product__item__title">
+                                            <h6>Pashmina Silk Terbaru Premium</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cart__price">75.000 IDR</td>
+                                    <td class="cart__quantity">
+                                        <div class="pro-qty">
+                                            <input type="text" value="2">
+                                        </div>
+                                    </td>
+                                    <td class="cart__total">150.000 IDR</td>
+                                    <td class="cart__close"><span class="icon_close"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="cart__product__item">
+                                        <img src="../static/img/iklan-jilbab.jpg" alt="Nama Produk 1" class="img-thumbnail" width="70px">
+                                    </td>
+                                    <td class="cart__product__item">
+                                        <div class="cart__product__item__title">
+                                            <h6>Pashmina Silk Terbaru Premium</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cart__price">75.000 IDR</td>
+                                    <td class="cart__quantity">
+                                        <div class="pro-qty">
+                                            <input type="text" value="2">
+                                        </div>
+                                    </td>
+                                    <td class="cart__total">150.000 IDR</td>
+                                    <td class="cart__close"><span class="icon_close"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="cart__btn">
+                        <a href="./produk-utama.html">Continue Shopping</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="cart__btn update__btn">
+                        <a href="../templates/payment.html">ORDER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop Cart Section End -->
+<!--END-->
+
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <a href="./home.html"><h2>AVEILE</h2></a>
+                    </div>
+                    <p>Perusahaan kami berdiri sejak 2019. Kami menjual berbagai macam hijab mulai dari pashmina, segiempat dan aksesoris hijab.</p>
+                    <div class="footer__payment">
+                        <a href="#"><img src="../static/img/payment/payment-1.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-2.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-3.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-4.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-5.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-5">
+                <div class="footer__widget">
+                    <h6>Quick links</h6>
+                    <ul>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./produk-utama.html">Product</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="footer__widget">
+                    <h6>Account</h6>
+                    <ul>
+                        <li><a href="./cart.html">Cart</a></li>
+                        <li><a href="./transaction.html">Transaction</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-8">
+                <div class="footer__newslatter">
+                    <h6>NEWSLETTER</h6>
+                    <form action="#">
+                        <input type="text" placeholder="Email">
+                        <button type="submit" class="site-btn">Subscribe</button>
+                    </form>
+                    <div class="footer__social">
+                        <a href="#"><i class="fa fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                        <a href="#"><i class="fa fa-shop"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <div class="footer_copyright_text">
+                    <p>&copy;  AVEILE 1.1.0 Version</p>
+                </div>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Search Begin -->
+<div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search End -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+    <!-- Js Plugins -->
+<script src="../static/js/jquery-3.3.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/jquery.magnific-popup.min.js"></script>
+<script src="../static/js/jquery-ui.min.js"></script>
+<script src="../static/js/mixitup.min.js"></script>
+<script src="../static/js/jquery.countdown.min.js"></script>
+<script src="../static/js/jquery.slicknav.js"></script>
+<script src="../static/js/owl.carousel.min.js"></script>
+<script src="../static/js/jquery.nicescroll.min.js"></script>
+<script src="../static/js/main.js"></script>
+</body>
+</html>

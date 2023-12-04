@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ashion Template">
+    <meta name="keywords" content="Ashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aveile Hijab</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> <!-- Font Awesome CSS -->
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+            .text-column .column {
+        width: 100%;
+        padding: 5px;
+        font-size: small;
+        font-weight: 500;
+        background-color: #B4A48E;
+        border-radius: 50px;
+        margin: 10px 0;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .text-column .column-store {
+        width: 100%;
+        font-size: small;
+        font-weight: 500;
+        background-color: #B4A48E;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    .form input{
+        background-color: #DED8C3;
+        width: 100%;
+        height: 35px;
+        padding: 3px;
+        margin: 5px 0;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .form textarea {
+        background-color: #DED8C3;
+        width: 100%;
+        height: 85px;
+        padding: 3px;
+        margin: 5px 0;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .text-column .form {
+        background-color: #fff;
+        width: 100%;
+        padding: 10px;
+        font-size: small;
+        font-weight: 500;
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+
+    .column-store button {
+        font-size: smaller;
+        background-color: #281D16;
+        color: #fff;
+        border: none;
+        padding: 3px 8px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    .form button {
+        background-color: #281D16;
+        color: #fff;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    .image{
+        text-align: center;
+    }
+
+    .column-attention {
+        background-color: #D9D9D9;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .column {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px; /* Sesuaikan margin sesuai kebutuhan */
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        margin-left: 25%;
+    }
+
+    ion-icon {
+        margin-right: 10px; /* Sesuaikan margin sesuai kebutuhan */
+    }
+
+    .link-dark {
+        text-decoration: none;
+        color: #000; /* Sesuaikan warna sesuai kebutuhan */
+    }
+
+    .enlarge-right {
+        transform: scaleX(1.6); /* Sesuaikan faktor skala sesuai kebutuhan */
+        transform-origin: 0 0; /* Menetapkan titik asal transformasi di kiri atas */
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <span class="navbar-text">
+                AVEILE
+            </span>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="sidebar" id="mySidebar">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <div class="sidebar-logo">
+            <img src="../static/img/logo sidebar.png" alt="" class="img-fluid"> <!-- Make the image responsive -->
+        </div>
+        <div class="sidebar-slogan">
+            <h2>Hello Hijabers!</h2>
+        </div>
+        <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> HOME</a></li>
+            <li><a href="produk-utama.html"><i class="fa-solid fa-shirt"></i> PRODUCT</a></li>
+            <li><a href="transaction.html"><i class="fa-solid fa-bag-shopping"></i> TRANSACTION</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> CART</a></li>
+            <li><a class="active" href="contact.html"><i class="fas fa-address-book"></i> CONTACT</a></li>
+            <li><a href="main.html"><i class="fa-solid fa-right-from-bracket"></i> LOGOUT</a></li>
+        </ul>
+        <aside class="sidebar-copyright">
+            <!-- Konten sidebar -->
+            <p>&copy; AVEILE 
+                1.1.0 Version
+            </p>
+        </aside>        
+    </div>
+
+<!--EDIT DISINI-->
+    <main class="container">
+        <div class="row">
+            <div class="col-md-8 py-5">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="text-column">
+                            <!-- Kolom 1 -->
+                            <div class="column">
+                                <div class="flex-container">
+                                    <ion-icon name="logo-whatsapp"></ion-icon>
+                                    <a href="https://web.whatsapp.com/" class="link-dark">(+62) 877 4290 5958</a>
+                                </div>
+                            </div>
+
+                            <!-- Kolom 2 -->
+                            <div class="column">
+                                <div class="flex-container">
+                                    <ion-icon name="mail-sharp"></ion-icon>
+                                    <a href="https://www.google.com/intl/id/gmail/about/" class="link-dark">aveilehijab@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Kolom 3 -->
+                            <div class="column">
+                                <div class="flex-container">
+                                    <ion-icon name="storefront-sharp"></ion-icon>
+                                    <a href="https://shopee.co.id/" class="link-dark">aveilehijab.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Kolom 4 -->
+                            <div class="column">
+                                <div class="flex-container">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                    <a href="instagram.com" class="link-dark">@aveile.hijab</a>
+                                </div>
+                            </div>
+
+                            <!-- Kolom 5 -->
+                            <div class="column">
+                                <div class="flex-container">
+                                    <ion-icon name="logo-tiktok"></ion-icon>
+                                    <a href="https://www.tiktok.com/login/phone-or-email/phone" class="link-dark">@aveile_hijab</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="text-column">
+                                <div class="column-store">
+                                    <br>
+                                    <ion-icon name="location-sharp" size="large"></ion-icon>
+                                    <p>STORE <br><br> 7924+M35, Jl. RRU Yogyakarta, 55284</p>
+                                    <br>
+                                    <button><a href="https://maps.app.goo.gl/vb2946QiRjWtZohT6"></a>VISIT NOW</button>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="image">
+                            <div class="ratio ratio-21x9">
+                                <img src="../static/img/loc.png" class="img-fluid enlarge-right" alt="Gambar Lokasi">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-5">
+                <div class="form">
+                    <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <h6 style="text-align: center;">Send us a Message</h6>
+                    <form>
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email Address">
+                        <textarea placeholder="Message"></textarea>
+                        <button>Submit</button>
+                    </form>
+                    </div>
+                    <div class="column-attention">
+                        <p>If you have questions, You can send question via the form provided or email. We will definitely reply to your message as soon as possible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--END-->
+
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <a href="./home.html"><h2>AVEILE</h2></a>
+                    </div>
+                    <p>Perusahaan kami berdiri sejak 2019. Kami menjual berbagai macam hijab mulai dari pashmina, segiempat dan aksesoris hijab.</p>
+                    <div class="footer__payment">
+                        <a href="#"><img src="../static/img/payment/payment-1.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-2.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-3.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-4.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-5.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-5">
+                <div class="footer__widget">
+                    <h6>Quick links</h6>
+                    <ul>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./produk-utama.html">Product</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="footer__widget">
+                    <h6>Account</h6>
+                    <ul>
+                        <li><a href="./cart.html">Cart</a></li>
+                        <li><a href="./transaction.html">Transaction</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-8">
+                <div class="footer__newslatter">
+                    <h6>NEWSLETTER</h6>
+                    <form action="#">
+                        <input type="text" placeholder="Email">
+                        <button type="submit" class="site-btn">Subscribe</button>
+                    </form>
+                    <div class="footer__social">
+                        <a href="#"><i class="fa fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                        <a href="#"><i class="fa fa-shop"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <div class="footer_copyright_text">
+                    <p>&copy;  AVEILE 1.1.0 Version</p>
+                </div>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Search Begin -->
+<div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search End -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+    <!-- Js Plugins -->
+<script src="../static/js/jquery-3.3.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/jquery.magnific-popup.min.js"></script>
+<script src="../static/js/jquery-ui.min.js"></script>
+<script src="../static/js/mixitup.min.js"></script>
+<script src="../static/js/jquery.countdown.min.js"></script>
+<script src="../static/js/jquery.slicknav.js"></script>
+<script src="../static/js/owl.carousel.min.js"></script>
+<script src="../static/js/jquery.nicescroll.min.js"></script>
+<script src="../static/js/main.js"></script>
+</body>
+</html>

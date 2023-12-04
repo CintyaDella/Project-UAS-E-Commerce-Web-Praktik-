@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ashion Template">
+    <meta name="keywords" content="Ashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aveile Hijab</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> <!-- Font Awesome CSS -->
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        li a.active {
+            color: #000;
+            padding: 5px;
+            margin-left: 45px;
+            text-decoration: none;
+            background: #fff; /* Warna latar belakang tautan aktif */
+            position: relative;
+        }
+
+        li a.active::before {
+            content: "";
+            background-color: white; /* Warna latar belakang setengah oval */
+            position: absolute;
+            top: 0;
+            left: -15px; /* Sesuaikan jarak oval dari sebelah kiri sesuai kebutuhan Anda */
+            width: 30px; /* Sesuaikan lebar oval sesuai kebutuhan Anda */
+            height: 34px; /* Sesuaikan tinggi oval sesuai kebutuhan Anda */
+            border-top-left-radius: 50px; /* Membuat sudut kiri atas oval */
+            border-bottom-left-radius: 50px; /* Membuat sudut kiri bawah oval */
+        }
+
+        .navbar {
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #B4A48E;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar ul{
+            list-style: none;
+        }
+
+        .sidebar a {
+            padding: 10px 30px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-left: 40px;
+            color: #000;
+            display: block;
+        }
+
+        .sidebar li a.active{
+            padding-left: 27px;
+        }
+
+        .sidebar a:hover {
+            background-color:#fff;
+            color: #000;
+            padding: 5px 16px;
+        }
+
+        .container-fluid{
+            height: 80px;
+            background-color: #DED8C3;
+            padding: 0;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        .closebtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:transparent;
+            position: absolute;
+            top: 10px; /* Sesuaikan jarak dari atas sesuai kebutuhan Anda */
+            left: 10px; /* Sesuaikan jarak dari kiri sesuai kebutuhan Anda */
+        }
+
+        .form-control{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* Mengubah warna tombol pencarian saat dihover */
+        .btn-outline-success:hover {
+            background-color: #B4A48E; /* Ganti warna latar belakang saat dihover */
+            color: #000; /* Ganti warna teks saat dihover */
+            border-color: #B4A48E;
+        }
+        /* Mengubah warna bordir dan warna teks pada tombol pencarian */
+        .btn-outline-success {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-right: 20px;
+            border-color: #B4A48E; /* Ganti warna bordir */
+            color: #000; /* Ganti warna teks */
+        }
+
+        .content {
+            margin-left: 0;
+            padding: 1px 16px;
+            height: 1000px;
+            transition: margin-left 0.5s;
+        }
+
+        .navbar-text{
+            margin-left: -600px;
+            font-size: large;
+        }
+
+        .sidebar-logo img{
+            height: 70px;
+            width: 70px;
+            margin: auto;
+            border-radius: 50%;
+            display: block;
+            margin-top: -50px;
+        }
+
+        .sidebar-slogan h2{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: 100%;
+        }
+
+        /* CSS untuk mengatur tampilan copyright */
+        .sidebar-copyright {
+            text-align: center; /* Mengatur teks ke tengah */
+            font-size: 12px; /* Mengatur ukuran font sesuai kebutuhan */
+            color: #000; /* Mengatur warna teks sesuai preferensi Anda */
+            margin-top:250PX; /* Mengatur margin atas sesuai kebutuhan */
+        }
+
+        .button-link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: inherit; /*Menurunkan warna teks dari elemen induk (button) */
+        }
+
+
+     /* Add media queries for responsiveness */
+        @media (max-width: 768px) {
+            .openbtn {
+                font-size: 24px;
+            }
+            .closebtn {
+                font-size: 24px;
+            }
+            .navbar-text {
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .openbtn {
+                font-size: 28px;
+            }
+            .closebtn {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <span class="navbar-text">
+                AVEILE
+            </span>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="sidebar" id="mySidebar">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <div class="sidebar-logo">
+            <img src="../static/img/logo sidebar.png" alt="" class="img-fluid"> <!-- Make the image responsive -->
+        </div>
+        <div class="sidebar-slogan">
+            <h2>Hello Hijabers!</h2>
+        </div>
+        <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> HOME</a></li>
+            <li><a href="produk-utama.html"><i class="fa-solid fa-shirt"></i> PRODUCT</a></li>
+            <li><a class="active" href="transaction.html"><i class="fa-solid fa-bag-shopping"></i> TRANSACTION</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> CART</a></li>
+            <li><a href="contact.html"><i class="fas fa-address-book"></i> CONTACT</a></li>
+            <li><a href="main.html"><i class="fa-solid fa-right-from-bracket"></i> LOGOUT</a></li>
+        </ul>
+        <aside class="sidebar-copyright">
+            <!-- Konten sidebar -->
+            <p>&copy; AVEILE 
+                1.1.0 Version
+            </p>
+        </aside>        
+    </div>
+<!--EDIT DISINI-->
+<section class="h-1000 gradient-custom">
+    <div class="container py-5 h-100"> <!--py digunakan untuk mengatur paadding antara content dengan navbar-->
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-10 col-xl-8">
+          <div class="card" style="border-radius: 10px;">
+            <div class="card-body p-4"> <!--mengatur jarak card dengan content-->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="d-flex flex-column align-items-start"> <!-- Menggunakan flex-column untuk elemen di bawah -->
+                        <div class="d-flex align-items-center">
+                            <p class="lead fw-normal mb-0" style="color: #000;">08 November 2023</p>
+                        </div>
+                    </div>
+                    <p class="small text-muted mb-0">DELIVERED</p>
+                </div>
+              <div class="card shadow-0 border mb-4">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-1">
+                      <img src="../static/img/iklan-jilbab.jpg" class="img-fluid" alt="Phone">
+                    </div>
+                    <div class="col-md-4 text-center d-flex justify-content-center align-items-center">
+                      <p class="text-muted mb-0">Pashmina Silk</p>
+                    </div>
+                    <div class="col-md-3 text-center d-flex justify-content-center align-items-center">
+                        <p class="text-muted mb-0">Nude</p>
+                    </div>
+                    <div class="col-md-1 text-center d-flex justify-content-center align-items-center">
+                        <p class="text-muted mb-0">1</p>
+                    </div>
+                    <div class="col-md-3 text-center d-flex justify-content-center align-items-center">
+                      <p class="text-muted mb-0 small">150.000 IDR</p>
+                    </div>
+                  </div>
+                  <hr class="mb-4" style="background-color: #e0e0e0; opacity: 1;">
+                  <div class="col-md-12 d-flex align-items-center justify-content-between">
+                    <p class="text-muted mb-0 small">+2 other products</p>
+                    <button class="btn btn-brown"><a href="../templates/order-details.html" class="button-link" >Detail</a></button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--END-->
+
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <a href="./home.html"><h2>AVEILE</h2></a>
+                    </div>
+                    <p>Perusahaan kami berdiri sejak 2019. Kami menjual berbagai macam hijab mulai dari pashmina, segiempat dan aksesoris hijab.</p>
+                    <div class="footer__payment">
+                        <a href="#"><img src="../static/img/payment/payment-1.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-2.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-3.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-4.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-5.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-5">
+                <div class="footer__widget">
+                    <h6>Quick links</h6>
+                    <ul>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./produk-utama.html">Product</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="footer__widget">
+                    <h6>Account</h6>
+                    <ul>
+                        <li><a href="./cart.html">Cart</a></li>
+                        <li><a href="./transaction.html">Transaction</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-8">
+                <div class="footer__newslatter">
+                    <h6>NEWSLETTER</h6>
+                    <form action="#">
+                        <input type="text" placeholder="Email">
+                        <button type="submit" class="site-btn">Subscribe</button>
+                    </form>
+                    <div class="footer__social">
+                        <a href="#"><i class="fa fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                        <a href="#"><i class="fa fa-shop"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <div class="footer_copyright_text">
+                    <p>&copy;  AVEILE 1.1.0 Version</p>
+                </div>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Search Begin -->
+<div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search End -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+    
+    <!-- Js Plugins -->
+<script src="../static/js/jquery-3.3.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/jquery.magnific-popup.min.js"></script>
+<script src="../static/js/jquery-ui.min.js"></script>
+<script src="../static/js/mixitup.min.js"></script>
+<script src="../static/js/jquery.countdown.min.js"></script>
+<script src="../static/js/jquery.slicknav.js"></script>
+<script src="../static/js/owl.carousel.min.js"></script>
+<script src="../static/js/jquery.nicescroll.min.js"></script>
+<script src="../static/js/main.js"></script>
+</body>
+</html>

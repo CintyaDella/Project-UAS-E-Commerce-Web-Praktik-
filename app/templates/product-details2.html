@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ashion Template">
+    <meta name="keywords" content="Ashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aveile Hijab</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> <!-- Font Awesome CSS -->
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/product.css" type="text/css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        li a.active {
+            color: #000;
+            padding: 5px;
+            margin-left: 45px;
+            text-decoration: none;
+            background: #fff; /* Warna latar belakang tautan aktif */
+            position: relative;
+        }
+
+        li a.active::before {
+            content: "";
+            background-color: white; /* Warna latar belakang setengah oval */
+            position: absolute;
+            top: 0;
+            left: -15px; /* Sesuaikan jarak oval dari sebelah kiri sesuai kebutuhan Anda */
+            width: 30px; /* Sesuaikan lebar oval sesuai kebutuhan Anda */
+            height: 34px; /* Sesuaikan tinggi oval sesuai kebutuhan Anda */
+            border-top-left-radius: 50px; /* Membuat sudut kiri atas oval */
+            border-bottom-left-radius: 50px; /* Membuat sudut kiri bawah oval */
+        }
+
+        .navbar {
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #B4A48E;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar ul{
+            list-style: none;
+        }
+
+        .sidebar a {
+            padding: 10px 30px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-left: 40px;
+            color: #000;
+            display: block;
+        }
+
+        .sidebar li a.active{
+            padding-left: 27px;
+        }
+
+        .sidebar a:hover {
+            background-color:#fff;
+            color: #000;
+            padding: 5px 16px;
+        }
+
+        .container-fluid{
+            height: 80px;
+            background-color: #DED8C3;
+            padding: 0;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        .closebtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:transparent;
+            position: absolute;
+            top: 10px; /* Sesuaikan jarak dari atas sesuai kebutuhan Anda */
+            left: 10px; /* Sesuaikan jarak dari kiri sesuai kebutuhan Anda */
+        }
+
+        .form-control{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* Mengubah warna tombol pencarian saat dihover */
+        .btn-outline-success:hover {
+            background-color: #B4A48E; /* Ganti warna latar belakang saat dihover */
+            color: #000; /* Ganti warna teks saat dihover */
+            border-color: #B4A48E;
+        }
+        /* Mengubah warna bordir dan warna teks pada tombol pencarian */
+        .btn-outline-success {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-right: 20px;
+            border-color: #B4A48E; /* Ganti warna bordir */
+            color: #000; /* Ganti warna teks */
+        }
+
+        .content {
+            margin-left: 0;
+            padding: 1px 16px;
+            height: 1000px;
+            transition: margin-left 0.5s;
+        }
+
+        .navbar-text{
+            margin-left: -600px;
+            font-size: large;
+        }
+
+        .sidebar-logo img{
+            height: 70px;
+            width: 70px;
+            margin: auto;
+            border-radius: 50%;
+            display: block;
+            margin-top: -50px;
+        }
+
+        .sidebar-slogan h2{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: 100%;
+        }
+
+        /* CSS untuk mengatur tampilan copyright */
+        .sidebar-copyright {
+            text-align: center; /* Mengatur teks ke tengah */
+            font-size: 12px; /* Mengatur ukuran font sesuai kebutuhan */
+            color: #000; /* Mengatur warna teks sesuai preferensi Anda */
+            margin-top:250PX; /* Mengatur margin atas sesuai kebutuhan */
+        }
+
+
+     /* Add media queries for responsiveness */
+        @media (max-width: 768px) {
+            .openbtn {
+                font-size: 24px;
+            }
+            .closebtn {
+                font-size: 24px;
+            }
+            .navbar-text {
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .openbtn {
+                font-size: 28px;
+            }
+            .closebtn {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <span class="navbar-text">
+                Hi Girls, welcome to Aveile!
+            </span>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="sidebar" id="mySidebar">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <div class="sidebar-logo">
+            <img src="../static/img/logo sidebar.png" alt="" class="img-fluid"> <!-- Make the image responsive -->
+        </div>
+        <div class="sidebar-slogan">
+            <h2>Hello Hijabers!</h2>
+        </div>
+        <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> HOME</a></li>
+            <li><a class="active" href="produk-utama.html"><i class="fa-solid fa-shirt"></i> PRODUCT</a></li>
+            <li><a href="transaction.html"><i class="fa-solid fa-bag-shopping"></i> TRANSACTION</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> CART</a></li>
+            <li><a href="contact.html"><i class="fas fa-address-book"></i> CONTACT</a></li>
+            <li><a href="main.html"><i class="fa-solid fa-right-from-bracket"></i> LOGOUT</a></li>
+        </ul>
+        <aside class="sidebar-copyright">
+            <!-- Konten sidebar -->
+            <p>&copy; AVEILE 
+                1.1.0 Version
+            </p>
+        </aside>        
+    </div>
+
+<!--EDIT DISINI-->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="./home.html"><i class="fa fa-home"></i> Home</a>
+                        <a href="./produk-utama.html">Product </a>
+                        <span>Pashmina Silk</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+<!-- Product Details Section Begin -->
+<section class="product-details spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="product__details__pic">
+                    <div class="product__details__pic__left product__thumb nice-scroll">
+                        <a class="pt active" href="#PasminaSilk1">
+                            <img src="../static/img/Produk2/PasminaSilk1.jpg" alt="">
+                        </a>
+                        <a class="pt" href="#PasminaSilk3">
+                            <img src="../static/img/Produk2/PasminaSilk3.jpg" alt="">
+                        </a>
+                        <a class="pt" href="#PasminaSilk2">
+                            <img src="../static/img/Produk2/PasminaSilk2.jpg" alt="">
+                        </a>
+                        <a class="pt" href="#PasminaSilk6">
+                            <img src="../static/img/Produk2/PasminaSilk6.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product__details__slider__content">
+                        <div class="product__details__pic__slider owl-carousel">
+                            <img data-hash="product-1" class="product__big__img" src="../static/img/Produk2/PasminaSilk1.jpg" alt="">
+                            <img data-hash="product-2" class="product__big__img" src="../static/img/Produk2/PasminaSilk3.jpg" alt="">
+                            <img data-hash="product-3" class="product__big__img" src="../static/img/Produk2/PasminaSilk2.jpg" alt="">
+                            <img data-hash="product-4" class="product__big__img" src="../static/img/Produk2/PasminaSilk6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="product__details__text">
+                    <h3>Pashmina Silk Series <span>Brand: Aveile Hijab </span></h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span>( 20RB+ Terjual )</span>
+                    </div>
+                    <div class="product__details__price">75.000 IDR</div>
+                    <p>Aveile Hijab memiliki produk hijab pashmina bahan silk yang nyaman di pakai, tidak panas, dan mudah dibentuk tentu saja cocok di outfit ke acara formal menambah tampilan menjadi elegan.</p>
+                    <div class="product__details__button">
+                        <div class="quantity">
+                            <span>Quantity:</span>
+                            <div class="pro-qty">
+                                <input type="text" value="1">
+                            </div>
+                        </div>
+                        <a href="./cart.html" class="cart-btn"><span class="icon_bag_alt"></span> Add to cart</a>
+                        <ul>
+                            <li><a href="#"><span class="icon_adjust-horiz"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__details__widget">
+                        <ul>
+                            <li>
+                                <span>Availability:</span>
+                                <div class="stock__checkbox">
+                                    <label for="stockin">
+                                        In Stock
+                                        <input type="checkbox" id="stockin">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Available color:</span>
+                                <div class="color__checkbox">
+                                    <label for="black">
+                                        <input type="radio" name="color__radio" id="black" checked>
+                                        <span class="checkmark black-bg"></span>
+                                    </label>
+                                    <label for="pink-nude">
+                                        <input type="radio" name="color__radio" id="pink-nude" checked>
+                                        <span class="checkmark pink-nude-bg"></span>
+                                    </label>
+                                    <label for="grey">
+                                        <input type="radio" name="color__radio" id="grey" checked>
+                                        <span class="checkmark grey-bg"></span>
+                                    </label>
+                                    <label for="dark-nude">
+                                        <input type="radio" name="color__radio" id="dark-nude" checked>
+                                        <span class="checkmark dark-nude-bg"></span>
+                                    </label>
+                                    <label for="blue">
+                                        <input type="radio" name="color__radio" id="blue" checked>
+                                        <span class="checkmark blue-bg"></span>
+                                    </label>
+                                    <label for="white">
+                                        <input type="radio" name="color__radio" id="white" checked>
+                                        <span class="checkmark white-bg"></span>
+                                    </label>
+                                    <label for="green">
+                                        <input type="radio" name="color__radio" id="green" checked>
+                                        <span class="checkmark green-bg"></span>
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li>
+                                <span>Promotions:</span>
+                                <p>Gratis Ongkir</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                    
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                            <h6>Description</h6>
+                            <p>Pashmina Luxury Silk Series</p>
+                            <p>Pashmina ini menggunakan bahan import berkualitas tinggi. Bahannya ringan, flowy, adem, namun tidak selicin kain satin karena bagian dalem matte.</p>
+                            <p>Berbeda dengan plisket, tekstur bahan ini tidak bisa hilang walaupun di setrika.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="related__title">
+                    <h5>MORE PRODUCTS</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="../static/img/Produk2/pashminaplisket1.jpg">
+                        <!-- <div class="label new">New</div> -->
+                        <ul class="product__hover">
+                            <li><a href="../static/img/Produk2/pashminaplisket1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="./cart.html"><span class="icon_bag_alt"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Pashmina Plisket Series</a></h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">50.000 IDR</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="../static/img/Produk2/crinkle1.jpg">
+                        <ul class="product__hover">
+                            <li><a href="../static/img/Produk2/crinkle1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="./cart.html"><span class="icon_bag_alt"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Pashmina Crinkle Series</a></h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">65.000 IDR</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product__item sale">
+                    <div class="product__item__pic set-bg" data-setbg="../static/img/Produk2/PasminaRayon8.jpg">
+                        <div class="label sale">Sale</div>
+                        <ul class="product__hover">
+                            <li><a href="../static/img/Produk2/PasminaRayon8.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="./cart.html"><span class="icon_bag_alt"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Pashmina Rayon Series</a></h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">59.000 IDR <span> 69.000 IDR </span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="../static/img/Produk2/scrunchie.jpeg.jpg">
+                        <ul class="product__hover">
+                            <li><a href="../static/img/Produk2/scrunchie.jpeg.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="cart.html"><span class="icon_bag_alt"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Scrunchie</a></h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">10.000 IDR</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Product Details Section End -->
+
+<!--END-->
+
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <a href="./home.html"><h2>AVEILE</h2></a>
+                    </div>
+                    <p>Perusahaan kami berdiri sejak 2019. Kami menjual berbagai macam hijab mulai dari pashmina, segiempat dan aksesoris hijab.</p>
+                    <div class="footer__payment">
+                        <a href="#"><img src="../static/img/payment/payment-1.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-2.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-3.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-4.png" alt=""></a>
+                        <a href="#"><img src="../static/img/payment/payment-5.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-5">
+                <div class="footer__widget">
+                    <h6>Quick links</h6>
+                    <ul>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./produk-utama.html">Product</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="footer__widget">
+                    <h6>Account</h6>
+                    <ul>
+                        <li><a href="./cart.html">Cart</a></li>
+                        <li><a href="./transaction.html">Transaction</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-8">
+                <div class="footer__newslatter">
+                    <h6>NEWSLETTER</h6>
+                    <form action="#">
+                        <input type="text" placeholder="Email">
+                        <button type="submit" class="site-btn">Subscribe</button>
+                    </form>
+                    <div class="footer__social">
+                        <a href="#"><i class="fa fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                        <a href="#"><i class="fa fa-shop"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <div class="footer_copyright_text">
+                    <p>&copy;  AVEILE 1.1.0 Version</p>
+                </div>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Search Begin -->
+<div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search End -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+    <!-- Js Plugins -->
+<script src="../static/js/jquery-3.3.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/jquery.magnific-popup.min.js"></script>
+<script src="../static/js/jquery-ui.min.js"></script>
+<script src="../static/js/mixitup.min.js"></script>
+<script src="../static/js/jquery.countdown.min.js"></script>
+<script src="../static/js/jquery.slicknav.js"></script>
+<script src="../static/js/owl.carousel.min.js"></script>
+<script src="../static/js/jquery.nicescroll.min.js"></script>
+<script src="../static/js/main.js"></script>
+</body>
+</html>
